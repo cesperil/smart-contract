@@ -1,4 +1,4 @@
-pragma solidity ^0.4.14;
+pragma solidity ^0.4.17;
 contract Agrotente {
    
    
@@ -24,7 +24,7 @@ contract Agrotente {
         
     }
   
-   function recuperaDatoByUsuario(string memory usuario) public returns(string memory retorno){
+   function recuperaDatoByUsuario(string memory usuario) public view returns(string memory retorno){
             
         string memory resultado = "";
         for(uint i=0; i<registros.length;i++){
@@ -43,7 +43,7 @@ contract Agrotente {
     }
     
     
-    function recuperaDatoByParcela(string memory parcela) public returns(string memory retorno){
+    function recuperaDatoByParcela(string memory parcela) public view returns(string memory retorno){
             
         string memory resultado = "";
         for(uint i=0; i<registros.length;i++){
