@@ -79,6 +79,7 @@ contract Agrotente {
     return string(babcde);
 }
 
+
 function strConcat(string _a, string _b, string _c, string _d) internal returns (string) {
     return strConcat(_a, _b, _c, _d, "");
 }
